@@ -1,8 +1,7 @@
 package lab3.Exercise3.Composition;
-package java.lang.*
 
 class Cylinder {
-    private Cicle top;
+    private Circle top;
     public double height;
 
     public Cylinder(double radius) {

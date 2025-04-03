@@ -1,5 +1,4 @@
 package lab3.Exercise3.Composition;
-package java.lang.*
 
 class Circle {
     private double radius;
