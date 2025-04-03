@@ -1,7 +1,7 @@
-package Lab2.Exercise2.prob2a.main;
+package lab2.Exercise2.prob2a.main;
 
-import Lab2.Exercise2.prob2a.Student;
-import Lab2.Exercise2.prob2a.StudentGradeReportFactory;
+import lab2.Exercise2.prob2a.Student;
+import lab2.Exercise2.prob2a.StudentGradeReportFactory;
 
 public class Main {
     public static void main(String[] args) {
