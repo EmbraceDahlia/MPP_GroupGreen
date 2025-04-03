@@ -1,8 +1,9 @@
 package lab3.Exercise4;
 
-public class Trailer  {
+public class Trailer extends Property {
 
-	public double computeRent(){
-		return 500;
-	}
+    @Override
+    public double computeRent() {
+        return 500;
+    }
 }
