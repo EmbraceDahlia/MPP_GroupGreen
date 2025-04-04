@@ -1,4 +1,4 @@
-package lab3.Exercise2;
+package src.lab3.Exercise2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,14 +32,11 @@ public class Landlord {
     }
 
     public double calculateProfit() {
-        double buildingIncome = 0;
+        double profit = 0;
         for (Building b : buildings) {
-            for (Apartment a : b.getApartments()) {
-                buildingIncome += a.getRentalFee();
-            }
-            buildingIncome -= b.getMaintenanceCost();
+            profit += b.calculateBuildingIncome();
         }
-        return buildingIncome;
+        return profit;
     }
 
 }

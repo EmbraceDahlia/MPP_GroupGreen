@@ -1,4 +1,4 @@
-package lab4.Exercise3;
+package src.lab4.Exercise3;
 
 public class Hourly extends Employee {
     private double hourlyWage;

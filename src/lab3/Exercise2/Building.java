@@ -1,6 +1,4 @@
-package lab3.Exercise2;
-
-import lab2.Exercise2.prob2b.OrderLine;
+package src.lab3.Exercise2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,5 +37,14 @@ public class Building {
 
     public void addApartment(double rentalFee) {
         this.apartments.add(new Apartment(rentalFee));
+    }
+
+    public double calculateBuildingIncome() {
+        double buildingIncome = 0;
+        for (Apartment a : apartments) {
+            buildingIncome += a.getRentalFee();
+        }
+        buildingIncome -= maintenanceCost;
+        return buildingIncome;
     }
 }
