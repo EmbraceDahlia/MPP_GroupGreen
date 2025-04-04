@@ -1,6 +1,4 @@
-package lab3.Exercise2;
-
-import lab2.Exercise2.prob2b.OrderLine;
+package src.lab3.Exercise2;
 
 import java.util.ArrayList;
 import java.util.List;

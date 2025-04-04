@@ -1,4 +1,4 @@
-package lab2.Exercise2.prob2a;
+package src.lab2.Exercise2.prob2a;
 
 public class Student {
     private String name;

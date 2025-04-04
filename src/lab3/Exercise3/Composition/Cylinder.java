@@ -1,4 +1,4 @@
-package lab3.Exercise3.Composition;
+package src.lab3.Exercise3.Composition;
 
 class Cylinder {
     private Circle top;

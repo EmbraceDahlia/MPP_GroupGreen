@@ -1,4 +1,4 @@
-package lab3.Exercise3.Inheritance;
+package src.lab3.Exercise3.Inheritance;
 
 class Cylinder extends Circle {
     private double radius;
