@@ -1,4 +1,4 @@
-package lab5.exercise1;
+package src.lab5.exercise1;
 
 public abstract class Duck {
 // The Duck class uses the FlyBehavior and QuackBehavior interfaces through composition
@@ -22,7 +22,7 @@ public abstract class Duck {
         this.quackBehavior = quackBehavior;
     }
 
-    public void swim(){
+    public void swim() {
         System.out.println("swimming");
     }
 
