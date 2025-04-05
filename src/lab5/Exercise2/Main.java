@@ -2,21 +2,22 @@ package lab5.Exercise2;
 
 import lab5.Exercise2.source.CustOrderFactory;
 import lab5.Exercise2.source.Customer;
+import lab5.Exercise2.source.ICustomerWithOrders;
 import lab5.Exercise2.source.Order;
 
 public class Main {
 	public static void main(String[] args) {
-		Customer cust = CustOrderFactory.createCustomerWithOrders("Mike");
+		ICustomerWithOrders customerWithOrders = CustOrderFactory.createCustomerWithOrders("Mike");
 
-		Order order = CustOrderFactory.createOrder(cust);
-        order.addItem(CustOrderFactory.createOrderItem("Shirt"));
-        order.addItem(CustOrderFactory.createOrderItem("Laptop"));
+		Order order = customerWithOrders.createOrder();
+		order.addItem("Shirt");
+		order.addItem("Laptop");
 
-        order = CustOrderFactory.createOrder(cust);
-		order.addItem(CustOrderFactory.createOrderItem("Pants"));
-		order.addItem(CustOrderFactory.createOrderItem("Knife set"));
+        order = customerWithOrders.createOrder();
+		order.addItem("Pants");
+		order.addItem("Knife set");
 
-		System.out.println(cust.getOrders());
+		System.out.println(customerWithOrders.getCustomer().getOrders());
 	}
 }
 

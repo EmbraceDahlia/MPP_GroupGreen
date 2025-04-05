@@ -2,16 +2,10 @@ package lab5.Exercise2.source;
 
 import java.time.LocalDate;
 
-public class CustOrderFactory {
-    public static Customer createCustomerWithOrders(String customerName) {
-        return Customer.newCustomer(customerName);
-    }
+final public class CustOrderFactory {
+    private CustOrderFactory(){}
 
-    public static Order createOrder(Customer cust) {
-        return Order.newOrder(cust, LocalDate.now());
-    }
-
-    public static Item createOrderItem(String name) {
-        return Item.newItem(name);
+    public static ICustomerWithOrders createCustomerWithOrders(String customerName) {
+        return new CustomerWithOrdersImplementation(customerName);
     }
 }

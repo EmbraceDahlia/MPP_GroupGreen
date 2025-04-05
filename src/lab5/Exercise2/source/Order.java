@@ -21,7 +21,8 @@ public class Order {
 		return ord;
 	}
 
-	public void addItem(Item item){
+	public void addItem(String name){
+		Item item = Item.newItem(name);
 		items.add(item);
 	}
 
