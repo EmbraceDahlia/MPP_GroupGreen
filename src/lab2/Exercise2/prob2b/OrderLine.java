@@ -1,4 +1,4 @@
-package src.lab2.Exercise2.prob2b;
+package lab2.Exercise2.prob2b;
 
 public class OrderLine {
     private String itemName;

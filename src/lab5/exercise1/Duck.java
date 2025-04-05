@@ -1,4 +1,4 @@
-package src.lab5.exercise1;
+package lab5.exercise1;
 
 public abstract class Duck {
 // The Duck class uses the FlyBehavior and QuackBehavior interfaces through composition

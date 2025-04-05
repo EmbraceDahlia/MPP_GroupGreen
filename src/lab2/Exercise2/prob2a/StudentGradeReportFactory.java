@@ -1,4 +1,4 @@
-package src.lab2.Exercise2.prob2a;
+package lab2.Exercise2.prob2a;
 
 public class StudentGradeReportFactory {
     public static Student createStudent(String name) {

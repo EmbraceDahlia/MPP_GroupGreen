@@ -1,7 +1,7 @@
-package src.lab3.Exercise2.admin;
+package lab3.Exercise2.admin;
 
-import src.lab3.Exercise2.Building;
-import src.lab3.Exercise2.Landlord;
+import lab3.Exercise2.Building;
+import lab3.Exercise2.Landlord;
 
 public class Main {
     public static void main(String[] args) {
