@@ -1,4 +1,4 @@
-package lab5.Exercise2;
+package lab5.Exercise2.source;
 
 import java.time.LocalDate;
 

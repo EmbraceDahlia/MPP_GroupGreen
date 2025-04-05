@@ -1,4 +1,4 @@
-package lab5.Exercise2;
+package lab5.Exercise2.source;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ public class Customer {
 		return new Customer(name);
 	}
 
-	public void addOrder(Order order) {
+	void addOrder(Order order) {
 		orders.add(order);
 	}
 	public String getName() {

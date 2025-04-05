@@ -1,4 +1,4 @@
-package lab5.Exercise2;
+package lab5.Exercise2.source;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ public class Order {
 		this.orderDate = orderDate;
 		items = new ArrayList<Item>();	
 	}
-	public static Order newOrder(Customer cust, LocalDate date) {
+	static Order newOrder(Customer cust, LocalDate date) {
 		if(cust == null) throw new NullPointerException("Null customer");
 		Order ord = new Order(date);
 		cust.addOrder(ord);

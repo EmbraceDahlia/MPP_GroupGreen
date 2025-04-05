@@ -1,4 +1,4 @@
-package lab5.Exercise2;
+package lab5.Exercise2.source;
 
 public class Item {
 	String name;
@@ -7,7 +7,7 @@ public class Item {
 		this.name = name;
 	}
 
-	public static Item newItem(String name) {
+	static Item newItem(String name) {
 		return new Item(name);
 	}
 	public String getName() {
