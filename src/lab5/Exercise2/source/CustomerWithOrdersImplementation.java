@@ -7,13 +7,18 @@ public class CustomerWithOrdersImplementation implements ICustomerWithOrders {
     private Customer customer;
 
     CustomerWithOrdersImplementation(String customerName) {
-        this.customer = Customer.newCustomer(customerName);;
+        this.customer = Customer.newCustomer(customerName);
     }
 
-    public Order createOrder() {
-        return Order.newOrder(customer, LocalDate.now());
+    CustomerWithOrdersImplementation(Customer customer, LocalDate date, List<String> itemNames) {
+        this.customer = customer;
+        Order o = Order.newOrder(customer, date);
+        for (String itemName : itemNames) {
+            o.addItem(itemName);
+        }
     }
 
+    @Override
     public Customer getCustomer() {
         return this.customer;
     }
