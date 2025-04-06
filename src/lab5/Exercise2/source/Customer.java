@@ -11,7 +11,7 @@ public class Customer {
 		orders = new ArrayList<Order>();	
 	}
 
-	public static Customer newCustomer(String name) {
+	static Customer newCustomer(String name) {
 		return new Customer(name);
 	}
 
