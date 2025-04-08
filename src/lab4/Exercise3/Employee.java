@@ -1,4 +1,4 @@
-package src.lab4.Exercise3;
+package lab4.Exercise3;
 
 public abstract class Employee {
     private String empId;

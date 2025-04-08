@@ -1,6 +1,6 @@
-package src.lab2.Exercise2.prob2b.main;
+package lab2.Exercise2.prob2b.main;
 
-import src.lab2.Exercise2.prob2b.Order;
+import lab2.Exercise2.prob2b.Order;
 
 public class Main {
     public static void main(String[] args) {

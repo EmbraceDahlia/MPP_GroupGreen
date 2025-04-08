@@ -1,4 +1,4 @@
-package src.lab3.Exercise3.Composition;
+package lab3.Exercise3.Composition;
 
 class Circle {
     private double radius;

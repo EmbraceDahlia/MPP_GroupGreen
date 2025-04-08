@@ -1,4 +1,4 @@
-package src.lab3.Exercise4;
+package lab3.Exercise4;
 
 public class Driver {
 
