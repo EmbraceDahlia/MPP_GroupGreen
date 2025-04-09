@@ -19,7 +19,9 @@ select sum(price) as 'Total Revenue per night' from Room where `type`='double';
 select count(distinct guestNo) from Booking where month(dateFrom)=8 or month(dateTo)=8;
 -- Subqueries and joins
 -- 6.16 List the price and type of all rooms at the Grosvenor Hotel.
-select price,`type` from Room where hotelNo = (select hotelNo from Hotel where hotelName = 'Grosvenor Hotel');
+SELECT Room.price, Room.type from Hotel
+JOIN Room ON Room.hotelNo = Hotel.hotelNo
+WHERE Hotel.hotelName = 'Grosvenor Hotel'
 -- 6.17 List all guests currently staying at the Grosvenor Hotel.
 select g.*
 from Guest g
@@ -30,9 +32,9 @@ where curdate() between b.dateFrom and b.dateTo and h.hotelName = 'Grosvenor Hot
 the room is occupied.
 select r.*,g.guestName
 from Room r
+inner join Hotel h on r.hotelNo=h.hotelNo
 left join Booking b on r.roomNo=b.roomNo and r.hotelNo=b.hotelNo AND curdate() between dateFrom and dateto
 left join Guest g on b.guestNo=g.guestNo
-inner join Hotel h on b.hotelNo=h.hotelNo
 where h.hotelName='Grosvenor Hotel';
 -- 6.19 What is the total income from bookings for the Grosvenor Hotel today
 select sum(price) as 'Total Income'
