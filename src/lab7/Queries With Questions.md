@@ -3,7 +3,7 @@ SELECT * FROM Hotel;
 -- 6.8 List full details of all hotels in London.
 SELECT * FROM Hotel WHERE city='London';
 -- 6.9 List the names and addresses of all guests living in London, alphabetically ordered by name.
-SELECT guestName as `Name`,guestAddress as Address FROM Guest WHERE guestAddress LIKE '%London' ORDER BY guestName;
+SELECT guestName as `Name`,guestAddress as Address FROM Guest WHERE guestAddress LIKE '%London%' ORDER BY guestName;
 -- 6.10 List all double or family rooms with a price below £40.00 per night, in ascending order of price.
 SELECT * FROM Room WHERE `type` IN ('double', 'family') AND price < 40 ORDER BY price;
 -- 6.11 List the bookings for which no dateTo has been specified.

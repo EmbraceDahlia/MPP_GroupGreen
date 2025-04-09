@@ -1,6 +1,6 @@
 6.7) SELECT * FROM Hotel 
 6.8) SELECT * FROM Hotel WHERE city = 'London'
-6.9) SELECT guestName, guestAddress FROM Guest WHERE guestAddress LIKE('%London') ORDER BY guestName
+6.9) SELECT guestName, guestAddress FROM Guest WHERE guestAddress LIKE('%London%') ORDER BY guestName
 6.10) SELECT * FROM Room WHERE (type = 'Double' OR type = 'Family') AND price < 40 ORDER BY price 
 6.11) SELECT * FROM Booking WHERE dateTo IS NULL
 6.12) SELECT COUNT(*) FROM Hotel
