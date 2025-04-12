@@ -2,8 +2,7 @@ package lab5.exercise1;
 
 public class DecoyDuck extends Duck {
     public DecoyDuck() {
-        flyBehavior = new CannotFly();
-        quackBehavior = new MuteQuack();
+        super(new CannotFly(),new MuteQuack());
     }
 
     @Override
