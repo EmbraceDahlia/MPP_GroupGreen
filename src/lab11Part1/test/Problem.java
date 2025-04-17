@@ -1,4 +1,4 @@
-package lab11.prob4;
+package lab11Part1.test;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;

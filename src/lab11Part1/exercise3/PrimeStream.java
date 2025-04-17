@@ -1,4 +1,4 @@
-package lab11.exercise3;
+package lab11Part1.exercise3;
 
 import java.util.stream.Stream;
 

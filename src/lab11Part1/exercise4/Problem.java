@@ -1,8 +1,7 @@
-package lab11.exercise4;
+package lab11Part1.exercise4;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Problem {
 

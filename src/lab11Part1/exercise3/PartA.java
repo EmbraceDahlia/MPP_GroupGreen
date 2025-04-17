@@ -1,3 +1,5 @@
+package lab11Part1.exercise3;
+
 import java.util.stream.Stream;
 
 public class PartA {

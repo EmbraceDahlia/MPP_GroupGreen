@@ -1,10 +1,8 @@
-package lab11.prob1;
-
-import lab11.prob1.*;
+package lab11Part1.prob1;
 
 import java.time.LocalDate;
 import java.util.*;
-import java.util.stream.Collectors;
+
 public class Main {
 	List<Order> orders;
 	public static void main(String[] args) {

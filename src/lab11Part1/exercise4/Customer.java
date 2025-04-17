@@ -1,4 +1,4 @@
-package lab11.exercise4;
+package lab11Part1.exercise4;
 
 public class Customer {
 	private String name;
