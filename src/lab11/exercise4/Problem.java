@@ -17,9 +17,11 @@ public class Problem {
     //duplicate elements.
     public static List<String> getZipsOfSpecialCustomers(List<Customer> list) {
         return list.stream()
-                .filter(customer -> customer.getCity().length() >= 6 && !customer.getCity().contains("e"))
+                .filter(customer -> customer.getCity().length() >= 6)
+                .filter(customer -> !customer.getCity().toLowerCase().contains("e"))
                 .map(Customer::getZip)
                 .distinct()
+                .sorted()
                 .toList();
     }
 
