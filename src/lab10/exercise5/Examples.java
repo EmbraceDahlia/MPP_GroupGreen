@@ -13,24 +13,31 @@ public class Examples {
     Function<String, String> upper1 = (String x) -> x.toUpperCase();
     Function<String, String> upper2 = String::toUpperCase;
 
+    //type: Class::instanceMethod
     Function<Employee, String> getName = e -> e.getName();
     Function<Employee, String> getNameClassInstanceMethodReference = Employee::getName;
 
+    //type: Class::instanceMethod
     BiConsumer<Employee, String> setName = (e, s) -> e.setName(s);
     BiConsumer<Employee, String> setNameClassInstanceMethodReference = Employee::setName;
 
+    //type: Class::instanceMethod
     BiFunction<String, String, Integer> compareTo = (s1, s2) -> s1.compareTo(s2);
     BiFunction<String, String, Integer> compareToClassInstanceMethodReference = String::compareTo;
 
+    //type: Class::staticMethod
     BiFunction<Integer, Integer, Double> mathPow = (x, y) -> Math.pow(x, y);
     BiFunction<Integer, Integer, Double> mathPowClassStaticMethodReference = Math::pow;
 
+    //type: Class::instanceMethod
     Function<Apple, Double> getWeight = a -> a.getWeight();
     Function<Apple, Double> getWeightClassInstanceMethodReference = Apple::getWeight;
 
+    //type: Class::staticMethod
     Function<String, Integer> parseInt = s -> Integer.parseInt(s);
     Function<String, Integer> parseIntClassStaticMethodReference = Integer::parseInt;
 
+    //type: object::instanceMethod
     EmployeeNameComparator comp = new EmployeeNameComparator();
     Comparator<Employee> compare = (e1, e2) -> (comp.compare(e1, e2));
     Comparator<Employee> compareObjectInstanceMethodReference = comp::compare;
