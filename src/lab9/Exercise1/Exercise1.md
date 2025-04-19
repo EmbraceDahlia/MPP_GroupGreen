@@ -5,4 +5,4 @@
 - E) 
 It is not possible for one class extend multiple classes. Java not allow this
 If a class implements two interfaces that provide the same default method, the class must override the method and explicitly decide which to call. The class implementation wins.
-If an interface extends two interfaces, like interface D implements interfaces B and C, also must resolve ambiguity explicitly using B.super.method() or C.super.method().
+If an interface extends two interfaces, like interface D extends interfaces B and C, the interface D must also resolve ambiguity explicitly using B.super.method() or C.super.method().
