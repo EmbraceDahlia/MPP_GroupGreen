@@ -1,6 +1,7 @@
 package lab11Part2.exercise8;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Main {
 	List<OrderItem> orderItems = new ArrayList<>();
@@ -12,18 +13,24 @@ public class Main {
 	}
 	
 	private boolean findProduct(String prodName) {
-		for(OrderItem item : orderItems) {
-			if(item != null) {
-				Product p=item.getProduct();
-				if(p != null) {
-					String name = p.getProductName();
-					if(name != null) {
-						if(name.equals(prodName)) return true;
-					}
-				}
-			}
-		}
-		return false;
+//		for(OrderItem item : orderItems) {
+//			if(item != null) {
+//				Product p=item.getProduct();
+//				if(p != null) {
+//					String name = p.getProductName();
+//					if(name != null) {
+//						if(name.equals(prodName)) return true;
+//					}
+//				}
+//			}
+//		}
+//		return false;
+		return orderItems.stream()
+				.anyMatch(item->Optional.
+						ofNullable(item)
+						.map(OrderItem::getProduct)
+						.map(Product::getProductName)
+						.orElse("").equals(prodName));
 	}
 	
 	private void loadOrderItemData() {
